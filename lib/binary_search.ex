@@ -8,8 +8,8 @@ defmodule GrokkingAlgorithms.BinarySearch do
     target_value = Enum.at(list, mid)
 
     cond do
-      left > right -> -1
       target_value == target -> mid
+      left > right -> -1
       target_value < target -> search(list, target, mid + 1, right)
       target_value > target -> search(list, target, left, mid - 1)
     end
