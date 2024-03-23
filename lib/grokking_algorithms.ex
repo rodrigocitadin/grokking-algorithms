@@ -12,7 +12,7 @@ defmodule GrokkingAlgorithms do
       :world
 
   """
-  def hello do
+  def binary_search do
     :world
   end
 end
